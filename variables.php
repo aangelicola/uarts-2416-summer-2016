@@ -1,7 +1,7 @@
 <?php
 
 $firstName = "anthony";
-$lastName = "angelicola";
+$lastName = "angelicola<br>";
 echo $firstName . " " . $lastName;
 
 $firstNumber = 13;
@@ -16,5 +16,13 @@ if ($numOne < 50){
 } elseif ($numTwo > 25){
     echo "33";
 }
+
+$brushCost = 3;
+$brushes = 0;
+while ($brushes <= 100){
+    echo "Cost is" .$brushes*$brushCost. "<br>";
+    $brushes=$brushes+10;
+}
+
 
 ?>
