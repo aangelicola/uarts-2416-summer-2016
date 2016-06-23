@@ -27,7 +27,7 @@ while ($brushes <= 100){
     $brushes=$brushes+10;
 }
 
-for ($i=1;$i<101;){
+for ($i=1; $i<101; ){
     echo $i."<br>";
     $i++;
 }
@@ -46,15 +46,30 @@ foreach ($sC as $x=>$x_value) {
     echo "<br>";
 }
 
-echo "<table";
+echo "Hello World";
+echo "<br>";
+
+$names=array("ANTHONY", "angelicola");
+
+echo fix_names($names);
+
+function fix_names($names){
+    $n1 = ucfirst(strtolower($names[0]));
+    $n2 = ucfirst(strtolower($names[1]));
+    return $n1 . " " . $n2;
+}
+
+
+echo "<table>";
 $books=array(
     array("title"=>"t1", "price"=>"p1", "author"=>"a1"),
     array("title"=>"t2", "price"=>"p2", "author"=>"a2"),
     array("title"=>"t3", "price"=>"p3", "author"=>"a3"),
     array("title"=>"t4", "price"=>"p4", "author"=>"a4"),
     array("title"=>"t5", "price"=>"p5", "author"=>"a5"),
-    array("title"=>"t6", "price"=>"p6", "author"=>"a6"),
+    array("title"=>"t6", "price"=>"p6", "author"=>"a6")
     );
-echo "</table";
+    echo "<tr>";
+echo "</table>";
 
 ?>
